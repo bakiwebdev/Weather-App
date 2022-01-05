@@ -1,5 +1,5 @@
 //Open Weather map Api
-const apiKey = "Your API Key";
+const apiKey = "Your Api Token";
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 // elements
@@ -42,9 +42,9 @@ const showError = (error) => {
 // Display weather data
 const displayWeatherData = (data) => {
   cityAndCountry.innerText = `${data.city}, ${data.country}`;
-  temperature.innerText = `${data.temp}°C`;
+  temperature.innerText = `${data.temp}`;
   pressure.innerText = `${data.pressure} hPa`;
-  humidity.innerText = `${data.humidity}%`;
+  humidity.innerText = `${data.humidity} %`;
 };
 
 window.onload = () => {

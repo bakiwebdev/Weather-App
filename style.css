@@ -3,79 +3,97 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  height: 100vh;
-  margin: 0;
-  padding: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.weatherContainer {
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: 2rem 6rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-
-  /* background-image: url("https://cdn.pixabay.com/photo/2020/12/09/12/03/rain-5817279_1280.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-}
-
-.mainDataContainer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.weatherDetailContainer {
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/532/592/small/light-purple-abstract-blur-background-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.weatherCity {
+.message{
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    padding: 1rem 2rem;
+    top: 10px;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+}
+.container {
+    background-color: aliceblue;
+    max-width: 800px;
+    width: 70%;
     height: auto;
-}
-#cityAndCountry {
-    font-size: 2em;
-}
-#cityAndCountry span {
-    font-size: 1.2rem;
-}
-
-.weatherTypeContainer {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
 }
-.weatherTypeLogo {
-    height: 150px;
-    width: auto;
-    max-width: 200px;
-    max-height: 200px;
-    background-color: #ccc;
+.first {
+    height: auto;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row-reverse;
 }
-
-.weatherType p {
-    font-size: 1.4rem;
+.second {
+    height: 40vh;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cityName {
+    margin: 0px;
+    font-size: 2.5rem;
+    font-stretch: extra-expanded;
+}
+.dateYear {
+    margin: 0px;
+    font-size: 1.5rem;
+    font-stretch: extra-expanded;
+}
+.cloudLogo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: gray;
+}
+.weatherDescription {
+    margin: 5px;
+    font-size: 1.7rem;
     font-weight: 600;
-    font-stretch: wider;
+    font-stretch: extra-expanded;
 }
-
-.weatherTempContainer {
-    background-color:aqua;
-    flex: auto;
+.weatherDetail .tempValue {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;;
+    margin: 0px;
+    font-size: 10rem;
+    font-weight: 200;
+}
+.weatherDetail sup {
+    position: absolute;
+    font-size: 2rem;
+    top: 10px;
+}
+.pressureAndHumidity {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.three {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row-reverse;
 }
-.temp {
-    font-size: 8em;
-    font-weight: 300;
-    font-stretch: wider;
-}
-

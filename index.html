@@ -8,10 +8,6 @@
     <title>Weather App By Biruk Endris</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&family=Readex+Pro&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -24,31 +20,36 @@
             <input type="text" id="cityInput" placeholder="city name">
             <button id="search">Search</button> -->
     <!--just sample  -->
-    <div class="weatherContainer">
-        <div class="mainDataContainer">
-            <div class="weatherDetailContainer">
-                <div class="weatherCity">
-                    <p id="cityAndCountry">San Francisco, USA <br><span>January 5, 2022</span></p>
-
+        <p id="message" class="message"></p>
+    <div class="container">
+        <!-- Github icon container -->
+        <div class="first">
+            <p>showGithub icon link</p>
+        </div>
+        <!-- weather app container -->
+        <div class="second">
+            <div class="cityDetail">
+                <p id="cityAndCountry" class="cityName">San Francisco, usa</p>
+                <p class="dateYear">January 5, 2022</p>
+                <div class="cloudLogo">
+                    <!-- image goes here -->
                 </div>
-                <div class="weatherTypeContainer">
-                    <div class="weatherTypeLogo">
-                        weather Logo
-                    </div>
-                    <div class="weatherType">
-                        <p>Cloudy</p>
-                    </div>
-                    <div class="humidityAndPressure">
-                        <p> 81 / 1002</p>
-                    </div>
-                </div>
+                <p class="weatherDescription">Cloudy</p>
             </div>
-            <div class="weatherTempContainer">
-                <p class="temp">25<sup>°C</sup></p>
+            <div class="weatherDetail">
+                <p class="tempValue"><span id="temperature">6</span><sup>°C</sup></p>
+                <p class="pressureAndHumidity"><span id="pressure"></span> / <span id="humidity"></span></p>
+            </div>
+        </div>
+        <!-- Custom City input -->
+        <div class="three">
+            <div class="inputContainer">
+                <input type="text" id="cityInput" placeholder="city name">
+                <button id="search">Search</button>
             </div>
         </div>
     </div>
 </body>
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 
 </html>
