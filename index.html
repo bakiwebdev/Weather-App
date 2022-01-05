@@ -7,18 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App By Biruk Endris</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&family=Readex+Pro&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <p id="message">loading ...</p>
-    <p id="cityAndCountry">city name here </p>
-    <p id="temperature">temperature value</p>
-    <p id="pressure">temperature value</p>
-    <p id="humidity">humidity value</p>
-    <input type="text" id="cityInput" placeholder="city name">
-    <button id="search">Search</button>
+    <!-- just sample -->
+    <!-- <p id="message">loading ...</p>
+            <p id="cityAndCountry">city name here </p>
+            <p id="temperature">temperature value</p>
+            <p id="pressure">temperature value</p>
+            <p id="humidity">humidity value</p>
+            <input type="text" id="cityInput" placeholder="city name">
+            <button id="search">Search</button> -->
+    <!--just sample  -->
+    <div class="weatherContainer">
+        <div class="mainDataContainer">
+            <div class="weatherDetailContainer">
+                <div class="weatherCity">
+                    <p id="cityAndCountry">San Francisco, USA <br><span>January 5, 2022</span></p>
+
+                </div>
+                <div class="weatherTypeContainer">
+                    <div class="weatherTypeLogo">
+                        weather Logo
+                    </div>
+                    <div class="weatherType">
+                        <p>Cloudy</p>
+                    </div>
+                    <div class="humidityAndPressure">
+                        <p> 81 / 1002</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weatherTempContainer">
+                <p class="temp">25<sup>°C</sup></p>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 
 </html>

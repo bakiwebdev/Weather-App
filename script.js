@@ -1,5 +1,5 @@
 //Open Weather map Api
-const apiKey = "YOUR_API_KEY";
+const apiKey = "Your API Key";
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 // elements
@@ -102,5 +102,6 @@ const getUserLocation = () => {
       position.coords.latitude,
       position.coords.longitude
     );
+    // console.log(position.coords.latitude, position.coords.longitude);
   });
 };
